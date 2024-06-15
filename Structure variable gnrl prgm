@@ -1,0 +1,32 @@
+// Read employee no., name and basic salary, Calculate HRA, DA, PF, Gross salary & net salary
+#include <stdio.h>
+struct employee
+{
+    int empno;
+    char name[40];
+    float sal,hra,da,pf,gross,net;
+};
+
+struct employee e;
+int main() {
+    printf("Enter employee no");
+    scanf("%d",&e. empno);
+    printf("Enter name");
+    scanf("%d",&e. name);
+    printf("Enter basic salary");
+    scanf("%d",e. sal);
+    e.hra=e. sal*15/100;
+    e.da=e. sal*5/100;
+    e.pf=e. sal*5/100;
+    e.gross=e. sal*5/100;
+    e.net=e. gross-e. pf;
+    printf("Employee no     =%d",e. empno);
+    printf("Employee name   =%d",e. name);
+    printf("basic salary    =%d",e. sal);
+    printf("HRA             =%d",e. hra);
+    printf("DA              =%d",e. da);
+    printf("PF              =%d",e. pf);
+    printf("Gross           =%d",e. gross);
+    printf("Net             =%d",e. net);
+    return 0;
+}
