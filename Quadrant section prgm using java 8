@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read input values for x and y
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+
+        // Determine the quadrant
+        int quadrant;
+        if (x > 0 && y > 0) {
+            quadrant = 1;
+        } else if (x < 0 && y > 0) {
+            quadrant = 2;
+        } else if (x < 0 && y < 0) {
+            quadrant = 3;
+        } else { // (x > 0 && y < 0)
+            quadrant = 4;
+        }
+
+        // Output the quadrant number
+        System.out.println(quadrant);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
